@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Passing a simple struct</title>
+    </head>
+    <body>
+        <h3>List of Preferred Work</h3>
+        <ul>
+        {{ range $work := . }}        
+            <li>
+                {{ $work.Name }} - {{ $work.Category }}
+            </li>    
+        {{ end }}        
+        </ul>        
+    </body>
+</html>
